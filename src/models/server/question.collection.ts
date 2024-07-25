@@ -41,22 +41,23 @@ export default async function createQuestionCollection() {
   ]);
   console.log(`Attributes for ${questionCollection} created`);
 
-  //   await Promise.all([
-  //     databases.createIndex(
-  //       db,
-  //       questionCollection,
-  //       "title",
-  //       IndexType.Fulltext,
-  //       ["title"],
-  //       ["asc"]
-  //     ),
-  //     databases.createIndex(
-  //       db,
-  //       questionCollection,
-  //       "content",
-  //       IndexType.Fulltext,
-  //       ["content"],
-  //       ["asc"]
-  //     ),
-  //   ]);
+  // await Promise.all([
+  //   databases.createIndex(
+  //     db,
+  //     questionCollection,
+  //     "title",
+  //     IndexType.Fulltext,
+  //     ["title"],
+  //     ["asc"]
+  //   ),
+  //   databases.createIndex(
+  //     db,
+  //     questionCollection,
+  //     "content",
+  //     IndexType.Fulltext,
+  //     ["content"],
+  //     ["asc"]
+  //   ),
+  // ]);
+  // console.log(`Indexes for ${questionCollection} created`);
 }
