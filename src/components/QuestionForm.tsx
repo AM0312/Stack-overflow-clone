@@ -17,7 +17,7 @@ import {
   questionAttachmentBucket,
   questionCollection,
 } from "@/models/name";
-import { Confetti } from "@/components/magicui/confetti";
+import { Confetti, ConfettiRef } from "@/components/magicui/confetti";
 
 const LabelInputContainer = ({
   children,
@@ -148,7 +148,6 @@ const QuestionForm = ({ question }: { question?: Models.Document }) => {
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // didn't check for attachment because it's optional in updating
     if (!formData.title || !formData.content || !formData.authorId) {
       setError(() => "Please fill out all fields");
       return;
